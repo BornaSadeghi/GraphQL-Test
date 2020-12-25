@@ -15,7 +15,15 @@ const root = {
             "firstName": "Jowe",
             "lastName": "Swanson",
             "age": 19,
-            "gender": "Male"
+            "gender": "Male",
+            "emails": [
+                { email: "sadeghiborna@gmail.com" },
+                { email: "sadegb1@mcmaster.ca" }
+            ],
+            "pets": [
+                { name: "Mango" },
+                { name: "Catter", age: 5 }
+            ]
         }
     }
 }

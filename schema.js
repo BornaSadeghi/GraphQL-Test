@@ -7,10 +7,21 @@ const schema = buildSchema(`
 
     type Person {
         id: ID
-        firstName: String
-        lastName: String
+        firstName: String!
+        lastName: String!
+        age: Int!
+        emails: [Email]!
+        gender: String!
+        pets: [Pet]
+    }
+
+    type Pet {
+        name: String
         age: Int
-        gender: String
+    }
+
+    type Email {
+        email: String!
     }
 `);
 
