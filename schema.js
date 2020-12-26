@@ -12,10 +12,10 @@ const schema = buildSchema(`
         firstName: String!
         lastName: String!
         age: Int!
-        gender: String!
+        gender: Gender!
         email: String!
         isLeftHanded: Boolean
-        Balance: Float
+        balance: Float
     }
 
     input PersonInput {
@@ -23,10 +23,16 @@ const schema = buildSchema(`
         firstName: String!
         lastName: String!
         age: Int!
-        gender: String!
+        gender: Gender!
         email: String!
         isLeftHanded: Boolean
-        Balance: Float
+        balance: Float
+    }
+
+    enum Gender {
+        MALE
+        FEMALE
+        OTHER
     }
 
     type Continent {
